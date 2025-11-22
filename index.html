@@ -43,7 +43,7 @@
         </a>
 
         <a href="#" class="logo">
-          <img src="./assets/images/logo.svg" alt="AWABTravel logo">
+          <img src="./assets/images/logo.svg" alt="AWABTravel logo" loading="lazy">
         </a>
 
         <div class="header-btn-group">
@@ -68,7 +68,7 @@
         <nav class="navbar" data-navbar>
           <div class="navbar-top">
             <a href="#" class="logo">
-              <img src="./assets/images/logo-blue.svg" alt="AWABTravel logo">
+              <img src="./assets/images/logo-blue.svg" alt="AWABTravel logo" loading="lazy">
             </a>
             <button class="nav-close-btn" aria-label="إغلاق القائمة" data-nav-close-btn>
               <ion-icon name="close-outline"></ion-icon>
@@ -83,6 +83,11 @@
             <li><a href="#gallery" class="navbar-link" data-nav-link>المعرض</a></li>
             <li><a href="#contact" class="navbar-link" data-nav-link>تواصل معنا</a></li>
           </ul>
+
+          <a class="nav-whatsapp" href="https://wa.me/201234567890" data-whatsapp-link data-whatsapp-number="201234567890">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <span>+20 123 456 7890</span>
+          </a>
         </nav>
 
         <a class="btn btn-primary whatsapp-pill" href="https://wa.me/201234567890" data-whatsapp-link data-whatsapp-number="201234567890">
@@ -344,6 +349,7 @@
               <textarea name="message" id="message" rows="4" required placeholder="ما الرحلة التي تحلم بها؟" class="input-field"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">إرسال إلى واتساب</button>
+            <p class="helper-text">سيتم فتح واتساب لكتابة الرسالة بنفس البيانات فوراً.</p>
             <p class="form-status" aria-live="polite"></p>
           </form>
         </div>
@@ -395,11 +401,13 @@
 
     <div class="footer-bottom">
       <div class="container">
-        <p class="copyright">&copy; 2024 AWABTravel. تصميم حديث بلغة عربية.</p>
+        <p class="copyright">&copy; 2024 AWABTravel. تصميم عربي أنيق.</p>
         <ul class="footer-bottom-list">
-          <li><a href="#" class="footer-bottom-link">الخصوصية</a></li>
-          <li><a href="#" class="footer-bottom-link">الشروط</a></li>
-          <li><a href="#" class="footer-bottom-link">الأسئلة الشائعة</a></li>
+          <li><a href="#contact" class="footer-bottom-link">تواصل</a></li>
+          <li><a href="#about" class="footer-bottom-link">من نحن</a></li>
+          <li><a href="#destination" class="footer-bottom-link">الوجهات</a></li>
+          <li><a href="#countries" class="footer-bottom-link">الدول</a></li>
+          <li><a href="#gallery" class="footer-bottom-link">المعرض</a></li>
         </ul>
       </div>
     </div>
