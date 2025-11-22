@@ -1,56 +1,44 @@
 <div align="center">
-  
-  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/tourly)
-  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/tourly?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/tourly?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/FYFmQEpZywc?style=social)](https://youtu.be/FYFmQEpZywc)
-
-  <br />
-  <br />
-  
-  <img src="./readme-images/project-logo.png" />
-
-  <h2 align="center">Tourly - Travel website</h2>
-
-  Tourly is fully responsive travel website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
-
-  <a href="https://codewithsadee.github.io/tourly/"><strong>➥ Live Demo</strong></a>
-
+  <img src="./readme-images/project-logo.png" alt="AWABTravel" />
+  <h2 align="center">AWABTravel – واجهة عربية عصرية</h2>
+  واجهة عربية بالكامل بلمسات تدرج لوني، حركة سلسة، وتكامل مباشر مع واتساب للتواصل الفوري.
 </div>
 
-<br />
+---
 
-### Demo Screeshots
-
-![Tourly Desktop Demo](./readme-images/desktop.png "Desktop Demo")
-
-### Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-### Run Locally
-
-To run **Tourly** locally, run this command on your git bash:
-
-Linux and macOS:
-
+### تشغيل محلياً
+1) ثبّت خادماً بسيطاً للملفات الثابتة (أي خيار أدناه):
+   * Node: `npm install -g serve`
+   * بايثون: `python3 -m http.server`
+2) استنسخ المشروع وشغّل الخادم:
 ```bash
-sudo git clone https://github.com/codewithsadee/tourly.git
+git clone <this-repo-url>
+cd NEWTORULY
+# خيار serve
+serve .
+# خيار بايثون
+python3 -m http.server 8080
 ```
+3) افتح المتصفح على `http://localhost:3000` (serve) أو `http://localhost:8080` (بايثون).
 
-Windows:
+### النشر
+الموقع ثابت (HTML/CSS/JS)؛ ارفع المجلد لأي خدمة استضافة ملفات ثابتة:
+- GitHub Pages: فعّل Pages لفرع `main`.
+- Netlify / Vercel: أنشئ موقعاً جديداً وأشر إلى هذا المجلد بدون خطوات بناء.
+- أي استضافة ثابتة/S3: ارفع الملفات كما هي وفعّل الاستضافة العامة.
 
-```bash
-git clone https://github.com/codewithsadee/tourly.git
-```
+### ربط واتساب
+- الرقم الافتراضي في الموقع `+20 123 456 7890`. حدّث كل روابط واتساب بتعديل قيمة `data-whatsapp-number` أو `href` داخل `index.html`.
+- نموذج التواصل يقرأ الرقم من خاصية `data-whatsapp-number` (في النموذج أو أول رابط يحمل `data-whatsapp-link`).
+- عند الإرسال يتم فتح واتساب بالرسالة المنسّقة: الاسم، البريد، ونص الاستفسار.
 
-### Contact
+### تخصيصات سريعة
+- **الألوان/التدرجات**: غيّر المتغيرات في بداية `assets/css/style.css`، مع دعم الوضع الداكن من زر التبديل في الترويسة.
+- **المحتوى العربي**: عدّل العناوين والبطاقات في الأقسام (الوجهات، الدول، المعرض) داخل `index.html`.
+- **تحليلات Google**: استبدل `G-XXXXXXXXXX` في رأس `index.html` بمعرّف قياسك الخاص.
+- **الأيقونات والرسوم**: الصور موجودة في `assets/images/`؛ استبدلها بمقاسات محسّنة مع `loading="lazy"` للحفاظ على الأداء.
 
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+### ملاحظات
+- تم إزالة قسم البحث وواجهة الحجز الخلفية للإبقاء على تجربة واجهة فقط.
+- تدعم الواجهة اللغة العربية (RTL) وتستهدف تجربة راقية على الشاشات الكبيرة مع تجاوب كامل للهواتف.
 
-### License
-
-This project is **free to use** and does not contains any license.

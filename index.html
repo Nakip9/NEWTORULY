@@ -1,834 +1,417 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tourly - Travel agancy</title>
+  <title>AWABTravel - رحلات أنيقة وحديثة</title>
 
-  <!-- 
-    - favicon
-  -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Poppins:wght@400;600&display=swap"
     rel="stylesheet">
+
+  <!-- Google Analytics (استبدل المعرف بمعرفك الحقيقي) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 
 <body id="top">
 
-  <!-- 
-    - #HEADER
-  -->
-
   <header class="header" data-header>
-
     <div class="overlay" data-overlay></div>
 
     <div class="header-top">
       <div class="container">
-
-        <a href="tel:+01123456790" class="helpline-box">
-
+        <a href="https://wa.me/201234567890" class="helpline-box" data-whatsapp-link data-whatsapp-number="201234567890">
           <div class="icon-box">
-            <ion-icon name="call-outline"></ion-icon>
+            <ion-icon name="logo-whatsapp"></ion-icon>
           </div>
-
           <div class="wrapper">
-            <p class="helpline-title">For Further Inquires :</p>
-
-            <p class="helpline-number">+01 (123) 4567 90</p>
+            <p class="helpline-title">تحدث معنا فوراً</p>
+            <p class="helpline-number">+20 123 456 7890</p>
           </div>
-
         </a>
 
         <a href="#" class="logo">
-          <img src="./assets/images/logo.svg" alt="Tourly logo">
+          <img src="./assets/images/logo.svg" alt="AWABTravel logo">
         </a>
 
         <div class="header-btn-group">
-
-          <button class="search-btn" aria-label="Search">
-            <ion-icon name="search"></ion-icon>
+          <button class="theme-toggle" type="button" aria-label="تبديل الوضع" data-theme-toggle>
+            <ion-icon class="theme-icon" name="moon"></ion-icon>
           </button>
-
-          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+          <button class="nav-open-btn" aria-label="فتح القائمة" data-nav-open-btn>
             <ion-icon name="menu-outline"></ion-icon>
           </button>
-
         </div>
-
       </div>
     </div>
 
     <div class="header-bottom">
       <div class="container">
-
         <ul class="social-list">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
+          <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
         </ul>
 
         <nav class="navbar" data-navbar>
-
           <div class="navbar-top">
-
             <a href="#" class="logo">
-              <img src="./assets/images/logo-blue.svg" alt="Tourly logo">
+              <img src="./assets/images/logo-blue.svg" alt="AWABTravel logo">
             </a>
-
-            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <button class="nav-close-btn" aria-label="إغلاق القائمة" data-nav-close-btn>
               <ion-icon name="close-outline"></ion-icon>
             </button>
-
           </div>
 
           <ul class="navbar-list">
-
-            <li>
-              <a href="#home" class="navbar-link" data-nav-link>home</a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link" data-nav-link>about us</a>
-            </li>
-
-            <li>
-              <a href="#destination" class="navbar-link" data-nav-link>destination</a>
-            </li>
-
-            <li>
-              <a href="#package" class="navbar-link" data-nav-link>packages</a>
-            </li>
-
-            <li>
-              <a href="#gallery" class="navbar-link" data-nav-link>gallery</a>
-            </li>
-
-            <li>
-              <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
-            </li>
-
+            <li><a href="#home" class="navbar-link" data-nav-link>الرئيسية</a></li>
+            <li><a href="#about" class="navbar-link" data-nav-link>من نحن</a></li>
+            <li><a href="#destination" class="navbar-link" data-nav-link>الوجهات</a></li>
+            <li><a href="#countries" class="navbar-link" data-nav-link>الدول</a></li>
+            <li><a href="#gallery" class="navbar-link" data-nav-link>المعرض</a></li>
+            <li><a href="#contact" class="navbar-link" data-nav-link>تواصل معنا</a></li>
           </ul>
-
         </nav>
 
-        <button class="btn btn-primary">Book Now</button>
-
+        <a class="btn btn-primary whatsapp-pill" href="https://wa.me/201234567890" data-whatsapp-link data-whatsapp-number="201234567890">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          <span>تواصل عبر واتساب</span>
+        </a>
       </div>
     </div>
-
   </header>
-
-
-
-
 
   <main>
     <article>
 
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="hero" id="home">
-        <div class="container">
-
-          <h2 class="h1 hero-title">Journey to explore world</h2>
-
-          <p class="hero-text">
-            Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit class corporis nostra rem quos
-            voluptatibus habitant?
-            Fames, vivamus minim nemo enim, gravida lobortis quasi, eum.
-          </p>
-
-          <div class="btn-group">
-            <button class="btn btn-primary">Learn more</button>
-
-            <button class="btn btn-secondary">Book now</button>
+      <section class="hero" id="home" data-animate>
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">تجربة سفر متكاملة</p>
+            <h1 class="h1 hero-title">اكتشف العالم مع أواب ترافل</h1>
+            <p class="hero-text">
+              رحلات مصممة بعناية، ألوان هادئة، وتفاصيل عصرية تناسب المسافر العصري. نصنع لك ذكريات لا تُنسى بأسلوب
+              أنيق ومتوازن.
+            </p>
+            <div class="btn-group">
+              <a class="btn btn-primary" href="#destination">استكشف الوجهات</a>
+              <a class="btn btn-secondary ghost" href="https://wa.me/201234567890" data-whatsapp-link data-whatsapp-number="201234567890">تواصل الآن</a>
+            </div>
           </div>
-
+          <div class="hero-visual" data-animate>
+            <div class="glass-card">
+              <p>سرعة الاستجابة</p>
+              <h3>مستشار سفر خاص بك</h3>
+              <p class="muted">نتابع طلبك خطوة بخطوة عبر واتساب.</p>
+            </div>
+            <div class="floating-card">
+              <ion-icon name="airplane"></ion-icon>
+              <div>
+                <p class="muted">إقلاع مريح</p>
+                <strong>خطط سلسة ومرنة</strong>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #TOUR SEARCH
-      -->
-
-      <section class="tour-search">
-        <div class="container">
-
-          <form action="" class="tour-search-form">
-
-            <div class="input-wrapper">
-              <label for="destination" class="input-label">Search Destination*</label>
-
-              <input type="text" name="destination" id="destination" required placeholder="Enter Destination"
-                class="input-field">
+      <section class="about" id="about" data-animate>
+        <div class="container about-grid">
+          <div class="about-text">
+            <p class="section-subtitle">لمسة تصميم هادئة</p>
+            <h2 class="h2 section-title">هوية بصرية حديثة بألوان متدرجة</h2>
+            <p class="section-text">
+              AWABTravel تقدم أسلوباً بسيطاً ومبهراً في نفس الوقت. استخدمنا تدرجات ناعمة، إضاءة خافتة، وخطوط عربية
+              واضحة لتجربة تصفح مريحة ومتوازنة على كل الأجهزة.
+            </p>
+            <div class="pill-list">
+              <span>تصميم متجاوب</span>
+              <span>عروض مخصصة</span>
+              <span>دعم فوري عبر واتساب</span>
             </div>
-
-            <div class="input-wrapper">
-              <label for="people" class="input-label">Pax Number*</label>
-
-              <input type="number" name="people" id="people" required placeholder="No.of People" class="input-field">
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <h3>+120</h3>
+              <p>رحلة حُجزت هذا العام</p>
             </div>
-
-            <div class="input-wrapper">
-              <label for="checkin" class="input-label">Checkin Date**</label>
-
-              <input type="date" name="checkin" id="checkin" required class="input-field">
+            <div class="stat-card">
+              <h3>4.9/5</h3>
+              <p>تقييم الزوار</p>
             </div>
-
-            <div class="input-wrapper">
-              <label for="checkout" class="input-label">Checkout Date*</label>
-
-              <input type="date" name="checkout" id="checkout" required class="input-field">
+            <div class="stat-card">
+              <h3>24/7</h3>
+              <p>متابعة مستمرة</p>
             </div>
-
-            <button type="submit" class="btn btn-secondary">Inquire now</button>
-
-          </form>
-
+          </div>
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #POPULAR
-      -->
-
-      <section class="popular" id="destination">
+      <section class="popular" id="destination" data-animate>
         <div class="container">
-
-          <p class="section-subtitle">Uncover place</p>
-
-          <h2 class="h2 section-title">Popular destination</h2>
-
+          <p class="section-subtitle">الوجهات المختارة</p>
+          <h2 class="h2 section-title">أماكن تليق بذوقك</h2>
           <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
+            اخترنا لك وجهات بطابع حضري وطبيعي تجمع بين الفخامة والبساطة. كل بطاقة تعكس طاقة مميزة مع تأثيرات تفاعلية
+            سلسة.
           </p>
 
           <ul class="popular-list">
-
             <li>
               <div class="popular-card">
-
                 <figure class="card-img">
-                  <img src="./assets/images/popular-1.jpg" alt="San miguel, italy" loading="lazy">
+                  <img src="./assets/images/popular-1.jpg" alt="إطلالة ساحلية في إيطاليا" loading="lazy">
                 </figure>
-
                 <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Italy</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">San miguel</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
-
+                  <p class="card-subtitle"><a href="#">إيطاليا</a></p>
+                  <h3 class="h3 card-title"><a href="#">سحر البحر المتوسط</a></h3>
+                  <p class="card-text">مدن تاريخية، شواطئ ذهبية، ومطاعم راقية تلبي كل الأذواق.</p>
                 </div>
-
               </div>
             </li>
-
             <li>
               <div class="popular-card">
-
                 <figure class="card-img">
-                  <img src="./assets/images/popular-2.jpg" alt="Burj khalifa, dubai" loading="lazy">
+                  <img src="./assets/images/popular-2.jpg" alt="أفق دبي" loading="lazy">
                 </figure>
-
                 <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Dubai</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Burj khalifa</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
-
+                  <p class="card-subtitle"><a href="#">الإمارات</a></p>
+                  <h3 class="h3 card-title"><a href="#">سماء دبي المتلألئة</a></h3>
+                  <p class="card-text">تصاميم مستقبلية، أسواق فاخرة، وتجارب صحراوية لا تُنسى.</p>
                 </div>
-
               </div>
             </li>
-
             <li>
               <div class="popular-card">
-
                 <figure class="card-img">
-                  <img src="./assets/images/popular-3.jpg" alt="Kyoto temple, japan" loading="lazy">
+                  <img src="./assets/images/popular-3.jpg" alt="معبد في اليابان" loading="lazy">
                 </figure>
-
                 <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Japan</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Kyoto temple</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
-
+                  <p class="card-subtitle"><a href="#">اليابان</a></p>
+                  <h3 class="h3 card-title"><a href="#">توازن التقاليد والحداثة</a></h3>
+                  <p class="card-text">حيوية المدن، هدوء المعابد، وتقنيات متطورة لخدمة رحلتك.</p>
                 </div>
-
               </div>
             </li>
-
           </ul>
-
-          <button class="btn btn-primary">More destintion</button>
-
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #PACKAGE
-      -->
-
-      <section class="package" id="package">
+      <section class="countries" id="countries" data-animate>
         <div class="container">
-
-          <p class="section-subtitle">Popular Packeges</p>
-
-          <h2 class="h2 section-title">Checkout Our Packeges</h2>
-
+          <p class="section-subtitle">إلهام السفر</p>
+          <h2 class="h2 section-title">دول ننصح بزيارتها</h2>
           <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
+            بطاقات أنيقة بصور كبيرة، تأثير تكبير ناعم، وأزرار "اكتشف" بلون متدرج لتشجيعك على التواصل مباشرة.
           </p>
 
-          <ul class="package-list">
-
-            <li>
-              <div class="package-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-1.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Experience The Great Holiday On Beach</h3>
-
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(25 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                  </div>
-
-                  <p class="price">
-                    $750
-                    <span>/ per person</span>
-                  </p>
-
-                  <button class="btn btn-secondary">Book Now</button>
-
-                </div>
-
+          <div class="countries-grid">
+            <article class="country-card" data-animate>
+              <div class="country-image">
+                <img src="./assets/images/packege-1.jpg" loading="lazy" alt="ساحل ماليزيا">
               </div>
-            </li>
-
-            <li>
-              <div class="package-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-2.jpg" alt="Summer Holiday To The Oxolotan River" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Summer Holiday To The Oxolotan River</h3>
-
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(20 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                  </div>
-
-                  <p class="price">
-                    $520
-                    <span>/ per person</span>
-                  </p>
-
-                  <button class="btn btn-secondary">Book Now</button>
-
-                </div>
-
+              <div class="country-content">
+                <p class="country-tagline">طبيعة استوائية وحياة عصرية</p>
+                <h3 class="h3">ماليزيا</h3>
+                <p class="card-text">مزيج ناعم بين العمارة المستقبلية وجزر ساحرة تعانق الغابات المطرية.</p>
+                <a class="btn btn-primary ghost" href="https://wa.me/201234567890" data-whatsapp-link data-whatsapp-number="201234567890">اكتشف</a>
               </div>
-            </li>
+            </article>
 
-            <li>
-              <div class="package-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-3.jpg" alt="Santorini Island's Weekend Vacation" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Santorini Island's Weekend Vacation</h3>
-
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(40 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                  </div>
-
-                  <p class="price">
-                    $660
-                    <span>/ per person</span>
-                  </p>
-
-                  <button class="btn btn-secondary">Book Now</button>
-
-                </div>
-
+            <article class="country-card" data-animate>
+              <div class="country-image">
+                <img src="./assets/images/popular-2.jpg" loading="lazy" alt="أفق دبي">
               </div>
-            </li>
+              <div class="country-content">
+                <p class="country-tagline">ناطحات سحاب وصحراء حالمة</p>
+                <h3 class="h3">الإمارات</h3>
+                <p class="card-text">رحلات مخصصة تجمع التسوق الفاخر بجلسات استرخاء على الشاطئ.</p>
+                <a class="btn btn-primary ghost" href="https://wa.me/201234567890" data-whatsapp-link data-whatsapp-number="201234567890">اكتشف</a>
+              </div>
+            </article>
 
-          </ul>
+            <article class="country-card" data-animate>
+              <div class="country-image">
+                <img src="./assets/images/popular-3.jpg" loading="lazy" alt="منظر طبيعي في اليابان">
+              </div>
+              <div class="country-content">
+                <p class="country-tagline">مزيج بين الهدوء والتقنية</p>
+                <h3 class="h3">اليابان</h3>
+                <p class="card-text">استكشف طوكيو النابضة بالحياة وكيوتو الهادئة في برنامج واحد متوازن.</p>
+                <a class="btn btn-primary ghost" href="https://wa.me/201234567890" data-whatsapp-link data-whatsapp-number="201234567890">اكتشف</a>
+              </div>
+            </article>
 
-          <button class="btn btn-primary">View All Packages</button>
+            <article class="country-card" data-animate>
+              <div class="country-image">
+                <img src="./assets/images/gallery-3.jpg" loading="lazy" alt="جبال سويسرا">
+              </div>
+              <div class="country-content">
+                <p class="country-tagline">قمم ثلجية وهواء نقي</p>
+                <h3 class="h3">سويسرا</h3>
+                <p class="card-text">قطارات بانورامية، بحيرات زرقاء، ومنتجعات فاخرة لعشاق الطبيعة.</p>
+                <a class="btn btn-primary ghost" href="https://wa.me/201234567890" data-whatsapp-link data-whatsapp-number="201234567890">اكتشف</a>
+              </div>
+            </article>
 
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #GALLERY
-      -->
-
-      <section class="gallery" id="gallery">
-        <div class="container">
-
-          <p class="section-subtitle">Photo Gallery</p>
-
-          <h2 class="h2 section-title">Photo's From Travellers</h2>
-
-          <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
-          </p>
-
-          <ul class="gallery-list">
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-1.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-2.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-3.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-4.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-5.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #CTA
-      -->
-
-      <section class="cta" id="contact">
-        <div class="container">
-
-          <div class="cta-content">
-            <p class="section-subtitle">Call To Action</p>
-
-            <h2 class="h2 section-title">Ready For Unforgatable Travel. Remember Us!</h2>
-
-            <p class="section-text">
-              Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque
-              laudantium. Sit ornare
-              mollitia tenetur, aptent.
-            </p>
+            <article class="country-card" data-animate>
+              <div class="country-image">
+                <img src="./assets/images/gallery-5.jpg" loading="lazy" alt="الساحل الايرلندي">
+              </div>
+              <div class="country-content">
+                <p class="country-tagline">خضرة لا تنتهي</p>
+                <h3 class="h3">أيرلندا</h3>
+                <p class="card-text">منحدرات ساحرة، موسيقى محلية، ومسارات طبيعية تنعش الحواس.</p>
+                <a class="btn btn-primary ghost" href="https://wa.me/201234567890" data-whatsapp-link data-whatsapp-number="201234567890">اكتشف</a>
+              </div>
+            </article>
           </div>
 
-          <button class="btn btn-secondary">Contact Us !</button>
+          <div class="countries-footer">
+            <a class="btn btn-secondary outline" href="https://wa.me/201234567890" data-whatsapp-link data-whatsapp-number="201234567890">عرض جميع الدول</a>
+          </div>
+        </div>
+      </section>
 
+      <section class="gallery" id="gallery" data-animate>
+        <div class="container">
+          <p class="section-subtitle">لحظات مختارة</p>
+          <h2 class="h2 section-title">مشاهد تلهم الرحلة</h2>
+          <div class="gallery-grid">
+            <figure class="gallery-item" data-animate>
+              <img src="./assets/images/gallery-1.jpg" loading="lazy" alt="شاطئ استوائي">
+            </figure>
+            <figure class="gallery-item" data-animate>
+              <img src="./assets/images/gallery-2.jpg" loading="lazy" alt="مدينة ليلية">
+            </figure>
+            <figure class="gallery-item" data-animate>
+              <img src="./assets/images/gallery-3.jpg" loading="lazy" alt="جبال">
+            </figure>
+            <figure class="gallery-item" data-animate>
+              <img src="./assets/images/gallery-4.jpg" loading="lazy" alt="شارع تراثي">
+            </figure>
+            <figure class="gallery-item" data-animate>
+              <img src="./assets/images/gallery-5.jpg" loading="lazy" alt="منحدرات ساحلية">
+            </figure>
+            <figure class="gallery-item" data-animate>
+              <img src="./assets/images/gallery-6.jpg" loading="lazy" alt="مسجد في دبي">
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="contact" data-animate>
+        <div class="container cta-grid">
+          <div class="cta-content">
+            <p class="section-subtitle">تواصل فوري</p>
+            <h2 class="h2 section-title">أرسل استفسارك عبر واتساب</h2>
+            <p class="section-text">
+              أدخل بياناتك وسيتم تحويل رسالتك مباشرة إلى واتساب باستخدام الرقم الظاهر في الشريط العلوي. تصميم مبسط
+              يدعم العربية بشكل كامل.
+            </p>
+            <div class="contact-highlights">
+              <span>رد سريع</span>
+              <span>خطط مخصصة</span>
+              <span>تفاصيل واضحة</span>
+            </div>
+          </div>
+
+          <form class="contact-form" data-whatsapp-form data-whatsapp-number="201234567890">
+            <div class="form-row">
+              <div class="input-wrapper">
+                <label for="name" class="input-label">الاسم*</label>
+                <input type="text" name="name" id="name" required placeholder="أحمد علي" class="input-field">
+              </div>
+              <div class="input-wrapper">
+                <label for="email" class="input-label">البريد الإلكتروني*</label>
+                <input type="email" name="email" id="email" required placeholder="you@example.com" class="input-field">
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label for="message" class="input-label">رسالتك*</label>
+              <textarea name="message" id="message" rows="4" required placeholder="ما الرحلة التي تحلم بها؟" class="input-field"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">إرسال إلى واتساب</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
         </div>
       </section>
 
     </article>
   </main>
 
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-
+  <footer class="footer" data-animate>
     <div class="footer-top">
       <div class="container">
-
         <div class="footer-brand">
-
           <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" alt="Tourly logo">
+            <img src="./assets/images/logo.svg" alt="AWABTravel logo">
           </a>
-
           <p class="footer-text">
-            Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia
-            at
-            perferendis, pretium, aenean aut ultrices.
+            وجهات عصرية، تصميم مريح، وتواصل مباشر عبر واتساب. كل ما تحتاجه لتخطيط رحلتك متاح في تجربة بصرية أنيقة.
           </p>
-
+          <div class="social-inline">
+            <a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a>
+          </div>
         </div>
 
         <div class="footer-contact">
-
-          <h4 class="contact-title">Contact Us</h4>
-
-          <p class="contact-text">
-            Feel free to contact and reach us !!
-          </p>
-
+          <h4 class="contact-title">تواصل</h4>
           <ul>
-
             <li class="contact-item">
-              <ion-icon name="call-outline"></ion-icon>
-
-              <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+              <ion-icon name="logo-whatsapp"></ion-icon>
+              <a href="https://wa.me/201234567890" class="contact-link" data-whatsapp-link data-whatsapp-number="201234567890">+20 123 456 7890</a>
             </li>
-
-            <li class="contact-item">
-              <ion-icon name="mail-outline"></ion-icon>
-
-              <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
-            </li>
-
             <li class="contact-item">
               <ion-icon name="location-outline"></ion-icon>
-
-              <address>3146 Koontz, California</address>
+              <address>القاهرة - مصر</address>
             </li>
-
           </ul>
-
         </div>
 
         <div class="footer-form">
-
-          <p class="form-text">
-            Subscribe our newsletter for more update & news !!
-          </p>
-
-          <form action="" class="form-wrapper">
-            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
-
-            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          <p class="form-text">انضم إلى النشرة البريدية لأحدث العروض.</p>
+          <form action="#" class="form-wrapper">
+            <input type="email" name="newsletter" class="input-field" placeholder="بريدك الإلكتروني" required>
+            <button type="submit" class="btn btn-secondary">اشتراك</button>
           </form>
-
         </div>
-
       </div>
     </div>
 
     <div class="footer-bottom">
       <div class="container">
-
-        <p class="copyright">
-          &copy; 2022 <a href="">codewithsadee</a>. All rights reserved
-        </p>
-
+        <p class="copyright">&copy; 2024 AWABTravel. تصميم حديث بلغة عربية.</p>
         <ul class="footer-bottom-list">
-
-          <li>
-            <a href="#" class="footer-bottom-link">Privacy Policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-bottom-link">Term & Condition</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-bottom-link">FAQ</a>
-          </li>
-
+          <li><a href="#" class="footer-bottom-link">الخصوصية</a></li>
+          <li><a href="#" class="footer-bottom-link">الشروط</a></li>
+          <li><a href="#" class="footer-bottom-link">الأسئلة الشائعة</a></li>
         </ul>
-
       </div>
     </div>
-
   </footer>
-
-
-
-
-
-  <!-- 
-    - #GO TO TOP
-  -->
 
   <a href="#top" class="go-top" data-go-top>
     <ion-icon name="chevron-up-outline"></ion-icon>
   </a>
 
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
