@@ -25,31 +25,50 @@
 
 ![Tourly Desktop Demo](./readme-images/desktop.png "Desktop Demo")
 
-### Prerequisites
+### Run it locally
 
-Before you begin, ensure you have met the following requirements:
+1) Install a simple static server (any of the following works):
+   * Node users: `npm install -g serve`
+   * Python users: built-in `python3 -m http.server`
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-### Run Locally
-
-To run **Tourly** locally, run this command on your git bash:
-
-Linux and macOS:
-
+2) Clone and start the site:
 ```bash
-sudo git clone https://github.com/codewithsadee/tourly.git
+git clone <this-repo-url>
+cd NEWTORULY
+# Option A: with serve
+serve .
+# Option B: with Python
+python3 -m http.server 8080
 ```
 
-Windows:
+3) Open the site in your browser at `http://localhost:3000` (serve default) or `http://localhost:8080` (Python).
 
-```bash
-git clone https://github.com/codewithsadee/tourly.git
+### Deploy it
+
+Because the project is static HTML/CSS/JS, you can deploy by uploading the folder contents to any static host:
+* **GitHub Pages**: push to a GitHub repo, enable Pages for the main branch, and the site will be served automatically.
+* **Netlify/Vercel**: create a new site and point it at this folder; no build step required.
+* **Any static host / S3 / Cloud Storage**: upload the files as-is and enable public hosting.
+
+### Telegram bot hookup
+
+1) Create a bot via [@BotFather](https://t.me/BotFather) and copy the bot token it gives you.
+2) Find the chat ID where you want to receive messages (for a group, add the bot to the group; for direct messages, start a chat with the bot). Use a bot like `@userinfobot` or call `https://api.telegram.org/bot<token>/getUpdates` to see the `chat.id` value after sending a message.
+3) Open `index.html` and set your credentials on the contact form element:
+```html
+<form class="contact-form"
+  data-telegram-form
+  data-telegram-token="YOUR_TELEGRAM_BOT_TOKEN"
+  data-telegram-chat-id="YOUR_CHAT_ID">
 ```
+Replace `YOUR_TELEGRAM_BOT_TOKEN` and `YOUR_CHAT_ID` with your values. The frontend will send inquiries directly to that chat.
 
-### Contact
+### What you can customize
 
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+* **Countries showcase** (`index.html`, Countries section): each `.country-card` has an image, tagline, name, description, and the “Discover” button link. Swap the image sources in `./assets/images`, edit the text, or duplicate cards to add more countries.
+* **Contact form fields** (`index.html`): the form currently collects name, email, phone, and message. You can add inputs, but keep the `data-telegram-*` attributes and update `assets/js/script.js` if you change field names.
+* **Animations & styles** (`assets/css/style.css`): hover/scroll effects and responsive grid breakpoints live here; adjust timings, shadows, or column counts as desired.
+* **Branding** (`assets/images/logo.svg`, footer in `index.html`): update logos, colors, and footer text to match your brand/year.
 
 ### License
 
