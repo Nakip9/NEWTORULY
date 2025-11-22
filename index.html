@@ -127,7 +127,7 @@
             </li>
 
             <li>
-              <a href="#package" class="navbar-link" data-nav-link>packages</a>
+              <a href="#countries" class="navbar-link" data-nav-link>countries</a>
             </li>
 
             <li>
@@ -142,7 +142,7 @@
 
         </nav>
 
-        <button class="btn btn-primary">Book Now</button>
+        <a class="btn btn-primary" href="#contact">Plan Trip</a>
 
       </div>
     </div>
@@ -160,7 +160,7 @@
         - #HERO
       -->
 
-      <section class="hero" id="home">
+      <section class="hero" id="home" data-animate>
         <div class="container">
 
           <h2 class="h1 hero-title">Journey to explore world</h2>
@@ -188,7 +188,7 @@
         - #TOUR SEARCH
       -->
 
-      <section class="tour-search">
+      <section class="tour-search" data-animate>
         <div class="container">
 
           <form action="" class="tour-search-form">
@@ -233,7 +233,7 @@
         - #POPULAR
       -->
 
-      <section class="popular" id="destination">
+      <section class="popular" id="destination" data-animate>
         <div class="container">
 
           <p class="section-subtitle">Uncover place</p>
@@ -361,336 +361,155 @@
 
 
 
-      <!-- 
-        - #PACKAGE
+      <!--
+        - #COUNTRIES
       -->
 
-      <section class="package" id="package">
+      <section class="countries" id="countries" data-animate>
         <div class="container">
 
-          <p class="section-subtitle">Popular Packeges</p>
+          <p class="section-subtitle">Explore the world</p>
 
-          <h2 class="h2 section-title">Checkout Our Packeges</h2>
+          <h2 class="h2 section-title">Featured countries</h2>
 
           <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
+            Discover vibrant cultures, breathtaking landscapes, and unforgettable adventures curated for every traveler.
+            Each country story comes alive with immersive imagery and quick highlights to spark your next journey.
           </p>
 
-          <ul class="package-list">
+          <div class="countries-grid">
 
-            <li>
-              <div class="package-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-1.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Experience The Great Holiday On Beach</h3>
-
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(25 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                  </div>
-
-                  <p class="price">
-                    $750
-                    <span>/ per person</span>
-                  </p>
-
-                  <button class="btn btn-secondary">Book Now</button>
-
-                </div>
-
+            <article class="country-card" data-animate>
+              <div class="country-image">
+                <img src="./assets/images/packege-1.jpg" srcset="./assets/images/packege-1.jpg 800w, ./assets/images/packege-1.jpg 1200w"
+                  sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Malaysia coastline" loading="lazy">
               </div>
-            </li>
-
-            <li>
-              <div class="package-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-2.jpg" alt="Summer Holiday To The Oxolotan River" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Summer Holiday To The Oxolotan River</h3>
-
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(20 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                  </div>
-
-                  <p class="price">
-                    $520
-                    <span>/ per person</span>
-                  </p>
-
-                  <button class="btn btn-secondary">Book Now</button>
-
-                </div>
-
+              <div class="country-content">
+                <p class="country-tagline">Tropical escapes &amp; buzzing night markets</p>
+                <h3 class="h3">Malaysia</h3>
+                <p class="card-text">From Kuala Lumpur's skyline to Langkawi's beaches, mix modern vibes with island calm.</p>
+                <a class="btn btn-primary ghost" href="#contact">Discover</a>
               </div>
-            </li>
+            </article>
 
-            <li>
-              <div class="package-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-3.jpg" alt="Santorini Island's Weekend Vacation" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Santorini Island's Weekend Vacation</h3>
-
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(40 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                  </div>
-
-                  <p class="price">
-                    $660
-                    <span>/ per person</span>
-                  </p>
-
-                  <button class="btn btn-secondary">Book Now</button>
-
-                </div>
-
+            <article class="country-card" data-animate>
+              <div class="country-image">
+                <img src="./assets/images/popular-1.jpg" srcset="./assets/images/popular-1.jpg 800w, ./assets/images/popular-1.jpg 1200w"
+                  sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Italy coastal town" loading="lazy">
               </div>
-            </li>
+              <div class="country-content">
+                <p class="country-tagline">La dolce vita beneath golden sunsets</p>
+                <h3 class="h3">Italy</h3>
+                <p class="card-text">Savor Mediterranean coasts, ancient history, and culinary icons crafted for dreamers.</p>
+                <a class="btn btn-primary ghost" href="#contact">Discover</a>
+              </div>
+            </article>
 
-          </ul>
+            <article class="country-card" data-animate>
+              <div class="country-image">
+                <img src="./assets/images/popular-2.jpg" srcset="./assets/images/popular-2.jpg 800w, ./assets/images/popular-2.jpg 1200w"
+                  sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Skyline of Dubai" loading="lazy">
+              </div>
+              <div class="country-content">
+                <p class="country-tagline">Futuristic skylines &amp; desert wonders</p>
+                <h3 class="h3">United Arab Emirates</h3>
+                <p class="card-text">Ascend the Burj Khalifa, cruise the marina, and escape to serene desert dunes in style.</p>
+                <a class="btn btn-primary ghost" href="#contact">Discover</a>
+              </div>
+            </article>
 
-          <button class="btn btn-primary">View All Packages</button>
+            <article class="country-card" data-animate>
+              <div class="country-image">
+                <img src="./assets/images/popular-3.jpg" srcset="./assets/images/popular-3.jpg 800w, ./assets/images/popular-3.jpg 1200w"
+                  sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Temple in Japan" loading="lazy">
+              </div>
+              <div class="country-content">
+                <p class="country-tagline">Tradition meets tech-forward cities</p>
+                <h3 class="h3">Japan</h3>
+                <p class="card-text">Witness cherry blossoms, neon nightlife, and peaceful shrines in one seamless journey.</p>
+                <a class="btn btn-primary ghost" href="#contact">Discover</a>
+              </div>
+            </article>
 
-        </div>
-      </section>
+            <article class="country-card" data-animate>
+              <div class="country-image">
+                <img src="./assets/images/gallery-3.jpg" srcset="./assets/images/gallery-3.jpg 800w, ./assets/images/gallery-3.jpg 1200w"
+                  sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Mountain scenery" loading="lazy">
+              </div>
+              <div class="country-content">
+                <p class="country-tagline">Alpine peaks &amp; cinematic valleys</p>
+                <h3 class="h3">Switzerland</h3>
+                <p class="card-text">Ride panoramic trains, taste artisan chocolate, and breathe crisp mountain air.</p>
+                <a class="btn btn-primary ghost" href="#contact">Discover</a>
+              </div>
+            </article>
 
+            <article class="country-card" data-animate>
+              <div class="country-image">
+                <img src="./assets/images/gallery-5.jpg" srcset="./assets/images/gallery-5.jpg 800w, ./assets/images/gallery-5.jpg 1200w"
+                  sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Cliffs beside ocean" loading="lazy">
+              </div>
+              <div class="country-content">
+                <p class="country-tagline">Wild coastlines &amp; ancient myths</p>
+                <h3 class="h3">Ireland</h3>
+                <p class="card-text">Explore emerald cliffs, lively pubs, and legends whispered across rolling hills.</p>
+                <a class="btn btn-primary ghost" href="#contact">Discover</a>
+              </div>
+            </article>
 
-
-
-
-      <!-- 
-        - #GALLERY
-      -->
-
-      <section class="gallery" id="gallery">
-        <div class="container">
-
-          <p class="section-subtitle">Photo Gallery</p>
-
-          <h2 class="h2 section-title">Photo's From Travellers</h2>
-
-          <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
-          </p>
-
-          <ul class="gallery-list">
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-1.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-2.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-3.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-4.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-5.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #CTA
-      -->
-
-      <section class="cta" id="contact">
-        <div class="container">
-
-          <div class="cta-content">
-            <p class="section-subtitle">Call To Action</p>
-
-            <h2 class="h2 section-title">Ready For Unforgatable Travel. Remember Us!</h2>
-
-            <p class="section-text">
-              Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque
-              laudantium. Sit ornare
-              mollitia tenetur, aptent.
-            </p>
           </div>
 
-          <button class="btn btn-secondary">Contact Us !</button>
+          <div class="countries-footer">
+            <a class="btn btn-secondary outline" href="#contact">View All Countries</a>
+          </div>
+
+        </div>
+      </section>
+      <section class="cta" id="contact" data-animate>
+        <div class="container cta-grid">
+
+          <div class="cta-content">
+            <p class="section-subtitle">Contact Us</p>
+
+            <h2 class="h2 section-title">Ready for unforgettable travel? Tell us your idea.</h2>
+
+            <p class="section-text">
+              Share your dream destinations and we will tailor a seamless journey. Messages are delivered instantly to
+              our travel concierge via Telegram for a fast reply.
+            </p>
+            <div class="contact-highlights">
+              <span>Fast responses</span>
+              <span>Global specialists</span>
+              <span>Personal itineraries</span>
+            </div>
+          </div>
+
+          <form class="contact-form" data-telegram-form data-telegram-token="YOUR_TELEGRAM_BOT_TOKEN"
+            data-telegram-chat-id="YOUR_CHAT_ID">
+            <div class="form-row">
+              <div class="input-wrapper">
+                <label for="name" class="input-label">Name*</label>
+                <input type="text" name="name" id="name" required placeholder="John Doe" class="input-field">
+              </div>
+              <div class="input-wrapper">
+                <label for="email" class="input-label">Email*</label>
+                <input type="email" name="email" id="email" required placeholder="you@example.com" class="input-field">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-wrapper">
+                <label for="phone" class="input-label">Phone</label>
+                <input type="tel" name="phone" id="phone" placeholder="Optional" class="input-field">
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label for="message" class="input-label">Message*</label>
+              <textarea name="message" id="message" rows="4" required placeholder="Tell us about your trip"
+                class="input-field"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send to Telegram</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
 
         </div>
       </section>
@@ -778,7 +597,7 @@
       <div class="container">
 
         <p class="copyright">
-          &copy; 2022 <a href="">codewithsadee</a>. All rights reserved
+          &copy; 2024 Tourly. All rights reserved
         </p>
 
         <ul class="footer-bottom-list">
